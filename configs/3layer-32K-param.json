@@ -1,0 +1,28 @@
+{
+  "experiment_name": "latitude_v1",
+  "seed": 54545,
+  "data": {
+    "data_csv_path": "data/processed/weather_station_years_300.csv",
+    "split_csv_path": "data/processed/station_splits_300.csv",
+    "input_len": 365,
+    "scale_x": true,
+    "scale_y": true
+  },
+  "model": {
+    "num_features": 32,
+    "kernel_size": 5,
+    "stride": 2,
+    "num_conv_layers": 3,
+    "fc_hidden_dim": 16
+  },
+  "training": {
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "num_epochs": 50
+  },
+  "output": {
+    "save_model": true,
+    "save_metrics": true,
+    "save_loss_curve": true
+  }
+}
